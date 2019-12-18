@@ -1,0 +1,21 @@
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/mei_4896/spring-cloud.git
+          username: 48965045@qq.com
+          password: meijiabo123
+          search-paths: /config
+  application:
+    name: config1
+server:
+  port: 8888
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/

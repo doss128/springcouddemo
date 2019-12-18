@@ -1,0 +1,31 @@
+server:
+  port: 8070
+
+spring:
+  application:
+    name: config
+    #profiles:
+  #active: native
+    #cloud:
+    #config:
+    #server:
+    #native:
+  #search-locations: classpath:/localconfig  #获取本地类路径下的文件的配置
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mei-4896/demo123.git
+          search-paths: config
+          username: 48965045@qq.com
+          password: meijiabo123
+      label: master
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+
+

@@ -1,0 +1,18 @@
+server:
+  port: 8020
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: sonsume
+
+
+zuul:
+  server:
+    port: 8030
+    Ip: 127.0.0.1
