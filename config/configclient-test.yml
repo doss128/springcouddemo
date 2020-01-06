@@ -11,3 +11,8 @@ eureka:
 spring:
   application:
     name: configclien1
+foo: meijiabo
+student:
+  name: 梅加波
+  age: 23
+  sex: 男
